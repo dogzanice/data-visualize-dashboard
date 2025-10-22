@@ -1,0 +1,58 @@
+/* CSS Variables for color theme */
+:root {
+    --primary-color: #c92121;
+    --secondary-color: #6c757d;
+    --background-color: #f0f2f5;
+    --surface-color: #ffffff;
+    --text-color: #212529;
+    --border-color: #dfe2e6;
+}
+
+/* Pro-tip: Makes layout calculations more intuitive */
+* {
+    box-sizing: border-box;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+/* Base styles for the entire page */
+body {
+    background-color: var(--background-color);
+    font-family: "Mitr", sans-serif;
+    color: var(--text-color);
+}
+
+/* Header styles */
+.page-header {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color); /* Added for better separation */
+}
+
+#page-title {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+/* Card component styles based on Box Model */
+.card {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    margin: 10px;
+    border-radius: 8px; /* Added for softer corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Added for depth */
+}
+
+/* Basic styling for sidebar (can be improved later) */
+aside {
+    padding: 10px;
+}
+
+aside ul {
+    list-style-type: none; /* Removes bullet points */
+}
+
+aside li {
+    padding: 10px 0;
+}
