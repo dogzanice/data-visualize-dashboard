@@ -1,6 +1,6 @@
 /* CSS Variables for color theme */
 :root {
-    --primary-color: #c92121;
+    --primary-color: #2779d6;
     --secondary-color: #6c757d;
     --background-color: #f0f2f5;
     --surface-color: #ffffff;
@@ -27,6 +27,14 @@ body {
     background-color: var(--surface-color);
     padding: 20px;
     border-bottom: 1px solid var(--border-color); /* Added for better separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-profile{
+    font-size: 14px;
+    color: var(--secondary-color);
 }
 
 #page-title {
@@ -49,10 +57,22 @@ aside {
     padding: 10px;
 }
 
-aside ul {
-    list-style-type: none; /* Removes bullet points */
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
 }
-
+.sidebar li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
 aside li {
     padding: 10px 0;
 }
